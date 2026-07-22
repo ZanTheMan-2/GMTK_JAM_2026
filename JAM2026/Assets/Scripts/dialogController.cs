@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 public class dialogController : MonoBehaviour
 {
+    public bool swapScene = false;
+    public String sceneName;
     public AudioSource audioSource;
     public SceneManagey sceneManagey;
    public String[] text;
@@ -11,7 +13,7 @@ public class dialogController : MonoBehaviour
    public Sprite[] person;
    public AudioClip[] voice;
    public TextMeshProUGUI achualText, whoIsTalkingText;
-   public GameObject canva;
+   public GameObject canva, gui;
    public SpriteRenderer spriteRenderer;
    private int pos = 0;
     
@@ -32,7 +34,10 @@ public class dialogController : MonoBehaviour
         }
         catch
         {
-            sceneManagey.SwitchScene("Map");
+            if(swapScene){sceneManagey.SwitchScene(sceneName);
+            canva.SetActive(false);
+            gui.SetActive(true);
+            
         }   
     }
-}
+}}

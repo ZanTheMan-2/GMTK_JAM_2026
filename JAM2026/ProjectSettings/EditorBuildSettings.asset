@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Office.unity
     guid: f583a79c99fd94eb88d89c53407a1ae7
   - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 30c6402c9b0d9489fb2cc6d9b94086fc
+  - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 346413b3f13884bce81590655722d2df
   m_configObjects:
