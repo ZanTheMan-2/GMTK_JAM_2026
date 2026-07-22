@@ -4,33 +4,35 @@ using UnityEngine;
 using TMPro;
 public class dialogController : MonoBehaviour
 {
-    private AudioSource audioSource;
-
+    public AudioSource audioSource;
+    public SceneManagey sceneManagey;
    public String[] text;
    public String[] whoIsTalking;
    public Sprite[] person;
    public AudioClip[] voice;
-   public TextMeshProUGUI achualText;
+   public TextMeshProUGUI achualText, whoIsTalkingText;
    public GameObject canva;
    public SpriteRenderer spriteRenderer;
    private int pos = 0;
     
-    private void start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+   
     private void Update()
     {
-        
-        if(Input.GetKeyDown(KeyCode.Space) && pos < text.Length)
+         try
         {
-            audioSource.Stop();
+            if(Input.GetKeyDown(KeyCode.Space))
+        {
+            //audioSource.Stop();
             achualText.SetText(text[pos]);
+            whoIsTalkingText.SetText(whoIsTalking[pos]);
             spriteRenderer.sprite = person[pos];
             audioSource.PlayOneShot(voice[pos]);
-
+            pos++;
         }
-
+        }
+        catch
+        {
+            sceneManagey.SwitchScene("Map");
+        }   
     }
-
 }
