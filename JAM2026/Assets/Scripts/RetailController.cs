@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 [System.Serializable]
 public class QuizQuestion
@@ -17,10 +18,11 @@ public class RetailController : MonoBehaviour
     public dialogController conStep1;
     public dialogController conStep2;
     public dialogController conStep3;
+    public dialogController conStep4;
 
     public TextMeshProUGUI questionsText;
     public TextMeshProUGUI[] answerLabels = new TextMeshProUGUI[4];
-    public GameObject quizz, canva, gui, getHiredStep1, getHiredStep2, getHiredStep3;
+    public GameObject quizz, canva, gui, getHiredStep1, getHiredStep2, getHiredStep3, getHiredStep4;
     public GameObject resultPanel;
     public TextMeshProUGUI resultText;
 
@@ -35,9 +37,15 @@ public class RetailController : MonoBehaviour
     {
         quizz.SetActive(false);
         if (resultPanel != null) resultPanel.SetActive(false);
+        HideAllSteps();
+    }
+
+    private void HideAllSteps()
+    {
         getHiredStep1.SetActive(false);
         getHiredStep2.SetActive(false);
         getHiredStep3.SetActive(false);
+        getHiredStep4.SetActive(false);
     }
 
     public void leaveButton()
@@ -47,33 +55,35 @@ public class RetailController : MonoBehaviour
 
     public void getJobButton()
     {
-        if (conStep1.IsRunning || conStep2.IsRunning || conStep3.IsRunning) return;
+        if (conStep1.IsRunning || conStep2.IsRunning ||
+            conStep3.IsRunning || conStep4.IsRunning) return;
         if (quizz.activeSelf) return;
         if (resultPanel != null && resultPanel.activeSelf) return;
 
         dialogController active;
 
+        HideAllSteps();
+
         if (stats.retailApply == 0)
         {
             getHiredStep1.SetActive(true);
-            getHiredStep2.SetActive(false);
-            getHiredStep3.SetActive(false);
             active = conStep1;
             stats.retailApply = 1;
         }
         else if (stats.retailApply == 2)
         {
-            getHiredStep1.SetActive(false);
             getHiredStep2.SetActive(true);
-            getHiredStep3.SetActive(false);
             active = conStep2;
         }
         else if (stats.retailApply == 3)
         {
-            getHiredStep1.SetActive(false);
-            getHiredStep2.SetActive(false);
             getHiredStep3.SetActive(true);
             active = conStep3;
+        }
+        else if (stats.retailApply == 4)
+        {
+            getHiredStep4.SetActive(true);
+            active = conStep4;
         }
         else
         {
@@ -91,9 +101,7 @@ public class RetailController : MonoBehaviour
 
     public void OnDialogFinished()
     {
-        getHiredStep1.SetActive(false);
-        getHiredStep2.SetActive(false);
-        getHiredStep3.SetActive(false);
+        HideAllSteps();
 
         if (stats.retailApply != 2) return;
         quiz();
@@ -149,7 +157,7 @@ public class RetailController : MonoBehaviour
         if (score >= passMark)
         {
             stats.retailApply = 3;
-            resultText.SetText($"You got the job! ({score}/{questions.Length})");
+            resultText.SetText($"YAY you passed the test! ({score}/{questions.Length})");
         }
         else
         {
@@ -159,10 +167,16 @@ public class RetailController : MonoBehaviour
 
         resultPanel.SetActive(true);
     }
+
     public void unpaid()
     {
         sceneManagey.SwitchScene("Till");
     }
+
+    public void badEnding()
+    {
+        sceneManagey.SwitchScene("BadEnding");
+    } 
     public void CloseResult()
     {
         resultPanel.SetActive(false);

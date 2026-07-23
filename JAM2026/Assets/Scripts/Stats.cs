@@ -4,8 +4,8 @@ using TMPro;
 
 public class Stats : MonoBehaviour
 {
-    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord;
-    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord;
+    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding;
+    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding;
     public SceneManagey sceneManager;
     public Slider energy, health;
     public TextMeshProUGUI moneyText;
@@ -16,6 +16,7 @@ public class Stats : MonoBehaviour
         Debug.Log($"{gameObject.scene.name}: starter={starterEnergy} current={currentEnergy} exists={PlayerPrefs.GetInt("statsExist", 0)}");
         if (PlayerPrefs.GetInt("statsExist", 0) != 0)
         {
+            currentBadEnding = PlayerPrefs.GetInt("BadEnding");
             currentEnergy = PlayerPrefs.GetInt("Energy");
             currentHealth = PlayerPrefs.GetInt("Health");
             currentTime   = PlayerPrefs.GetInt("Time");
@@ -25,6 +26,7 @@ public class Stats : MonoBehaviour
         }
         else
         {
+            currentBadEnding = starterBadEnding;
             currentEnergy = starterEnergy;
             currentHealth = starterHealth;
             currentTime   = starterTime;
@@ -40,6 +42,7 @@ public class Stats : MonoBehaviour
     // Called whenever the scene is changed
     public void SceneSwitched()
     {
+        PlayerPrefs.SetInt("BadEnding", currentBadEnding);
         PlayerPrefs.SetInt("Cash", currentCash);
         PlayerPrefs.SetInt("Energy", currentEnergy);
         PlayerPrefs.SetInt("Health", currentHealth);

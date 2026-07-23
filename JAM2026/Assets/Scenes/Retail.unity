@@ -119,6 +119,99 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &46458368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 46458370}
+  - component: {fileID: 46458369}
+  m_Layer: 0
+  m_Name: getHiredDialog4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &46458369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46458368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90da1c55e6e474a72b5f4ee90cc545af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::dialogController
+  beginOnStart: 0
+  swapScene: 0
+  sceneName: 
+  audioSource: {fileID: 1132099914}
+  sceneManagey: {fileID: 1132099911}
+  text:
+  - 'Great, just great. Did you really have to do decent.  '
+  - 'Now I have to trail another useless person who is good for nothing. '
+  - 'I would not look so excited, you just lost your entire life. '
+  - 'I just hope you get replaced by AI. '
+  - 'Welcome to the worst moments of your life. '
+  whoIsTalking:
+  - ShopMan
+  - ShopMan
+  - ShopMan
+  - ShopMan
+  - ShopMan
+  person:
+  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  voice:
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  achualText: {fileID: 125646629}
+  whoIsTalkingText: {fileID: 125646628}
+  canva: {fileID: 125646627}
+  gui: {fileID: 1945574546}
+  spriteRenderer: {fileID: 1253858386}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1132099913}
+        m_TargetAssemblyTypeName: RetailController, Assembly-CSharp
+        m_MethodName: badEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &46458370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46458368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 234.89758, y: 74.40099, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117332178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,12 +2595,14 @@ MonoBehaviour:
   starterCash: 0
   starterRetailApply: 0
   starterLandlord: 0
+  starterBadEnding: 0
   currentEnergy: 0
   currentHealth: 0
   currentTime: 0
   currentCash: 0
   retailApply: 0
   currentLandlord: 0
+  currentBadEnding: 0
   sceneManager: {fileID: 1132099911}
   energy: {fileID: 1293761387}
   health: {fileID: 800211159}
@@ -2577,6 +2672,7 @@ MonoBehaviour:
   conStep1: {fileID: 2072048817}
   conStep2: {fileID: 1382941199}
   conStep3: {fileID: 1899039721}
+  conStep4: {fileID: 46458369}
   questionsText: {fileID: 1372244727}
   answerLabels:
   - {fileID: 2117903304}
@@ -2589,6 +2685,7 @@ MonoBehaviour:
   getHiredStep1: {fileID: 2072048816}
   getHiredStep2: {fileID: 1382941198}
   getHiredStep3: {fileID: 1899039720}
+  getHiredStep4: {fileID: 46458368}
   resultPanel: {fileID: 1763402616}
   resultText: {fileID: 1256136195}
   questions:
@@ -4900,6 +4997,7 @@ SceneRoots:
   - {fileID: 2072048818}
   - {fileID: 1382941200}
   - {fileID: 1899039722}
+  - {fileID: 46458370}
   - {fileID: 125646625}
   - {fileID: 1628605583}
   - {fileID: 1945574550}

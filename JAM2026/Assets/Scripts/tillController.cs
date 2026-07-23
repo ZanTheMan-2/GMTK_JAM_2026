@@ -149,9 +149,9 @@ public class tillController : MonoBehaviour
             stats.currentCash += score * cashPerItem;
             stats.currentTime += timeCost;
         }
-
+        if(score >= 15) stats.retailApply = 4;
         if (resultText != null)
-            resultText.SetText($"Scanned {score} items\nEarned {score * cashPerItem}");
+            resultText.SetText($"Scanned {score}");
 
         if (resultPanel != null) resultPanel.SetActive(true);
     }

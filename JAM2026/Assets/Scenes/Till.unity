@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 157020940}
   - component: {fileID: 157020939}
   - component: {fileID: 157020938}
+  - component: {fileID: 157020943}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -381,9 +382,15 @@ MonoBehaviour:
   maxOnScreen: 6
   cashPerItem: 1
   timeCost: 1
-  audioSource: {fileID: 0}
-  scanSound: {fileID: 0}
-  itemSprites: []
+  audioSource: {fileID: 157020943}
+  scanSound: {fileID: 8300000, guid: f8aefe59f8bac4cd1a8e78b1d4b46122, type: 3}
+  itemSprites:
+  - {fileID: -1043762982736934151, guid: 04339ebc6d57c4358ad3746d9a4c8d37, type: 3}
+  - {fileID: 6234330970754847308, guid: 1036ceaade7094c69b4639f5248d0731, type: 3}
+  - {fileID: 7141923014319181449, guid: ddc660ce943d64c33afca405b6931a0c, type: 3}
+  - {fileID: -7226382747494397708, guid: 7c1b52889bb4f4fb0983c9689b5e9014, type: 3}
+  - {fileID: 7426769428663383884, guid: d048dd9c3401b44758721d3fd8d3ac31, type: 3}
+  - {fileID: 126794849063114206, guid: 90343e10e80834d0382706f2609ce96c, type: 3}
   stats: {fileID: 157020938}
   sceneManagey: {fileID: 157020939}
 --- !u!212 &157020941
@@ -460,6 +467,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &157020943
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157020937}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: f8aefe59f8bac4cd1a8e78b1d4b46122, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &224343831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.637, y: 35.592}
+  m_AnchoredPosition: {x: -22.637, y: 12.6}
   m_SizeDelta: {x: 175.146, y: 30.719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891598413
@@ -1261,7 +1365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Required: '
+  m_text: 'Required: 15'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1288,8 +1392,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2643,8 +2747,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
