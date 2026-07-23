@@ -3438,6 +3438,9 @@ MonoBehaviour:
   canva: {fileID: 60142566}
   gui: {fileID: 1105245725}
   spriteRenderer: {fileID: 2071487858}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1735145908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3587,7 +3590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::homeController
   canva: {fileID: 60142566}
   gui: {fileID: 1105245725}
-  con: {fileID: 0}
+  con: {fileID: 1735145907}
 --- !u!1 &1831097825
 GameObject:
   m_ObjectHideFlags: 0
