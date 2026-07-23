@@ -175,6 +175,7 @@ public class RetailController : MonoBehaviour
 
     public void badEnding()
     {
+        stats.currentBadEnding =1;
         sceneManagey.SwitchScene("BadEnding");
     } 
     public void CloseResult()
