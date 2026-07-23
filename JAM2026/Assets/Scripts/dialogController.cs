@@ -1,10 +1,11 @@
 using System;
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class dialogController : MonoBehaviour
 {
-    
+    private bool waited = false;
     public bool swapScene = false;
     public String sceneName;
     public AudioSource audioSource;
@@ -24,15 +25,17 @@ public class dialogController : MonoBehaviour
     {
         canva.SetActive(true);
         gui.SetActive(false);
+        StartCoroutine(waiter());
     }
 
     private void Update()
     {
+        if (!waited) return;
+        if (finished) return;
         if (!Input.GetKeyDown(KeyCode.Space)) return;
 
         if (pos >= text.Length)
         {
-            if (finished) return;
             finished = true;
 
             if (swapScene)
@@ -52,5 +55,11 @@ public class dialogController : MonoBehaviour
         spriteRenderer.sprite = person[pos];
         audioSource.PlayOneShot(voice[pos]);
         pos++;
+    }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(0.4f);
+        waited = true;
     }
 }

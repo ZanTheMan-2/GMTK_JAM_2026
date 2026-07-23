@@ -40,6 +40,7 @@ public class Map : MonoBehaviour
 
         stats.currentEnergy -= selected.carEnergyCost;
         stats.currentTime   += selected.carTimeCost;
+        stats.currentCash -=selected.carPriceCost;
         Travel();
     }
 
@@ -66,7 +67,8 @@ public class Map : MonoBehaviour
 
     private void Travel()
     {
-        confirmationUI.SetActive(false);
         sceneManager.SwitchScene(selected.sceneName);
+        confirmationUI.SetActive(false);
+
     }
 }
