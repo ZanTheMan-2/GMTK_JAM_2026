@@ -16,6 +16,7 @@ public class dialogController : MonoBehaviour
     public AudioClip[] voice;
     public TextMeshProUGUI achualText, whoIsTalkingText;
     public GameObject canva, gui;
+
     public SpriteRenderer spriteRenderer;
 
     private int pos = 0;
@@ -23,6 +24,7 @@ public class dialogController : MonoBehaviour
 
     private void Start()
     {
+        spriteRenderer.enabled = true;
         canva.SetActive(true);
         gui.SetActive(false);
         StartCoroutine(waiter());
@@ -44,6 +46,7 @@ public class dialogController : MonoBehaviour
             }
             else
             {
+                spriteRenderer.enabled = false;
                 canva.SetActive(false);
                 gui.SetActive(true);
             }

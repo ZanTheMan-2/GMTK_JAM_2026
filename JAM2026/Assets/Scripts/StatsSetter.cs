@@ -11,5 +11,6 @@ public class StatsSetter : MonoBehaviour
         stats.currentEnergy = energy;
         stats.currentCash = money;
         stats.currentTime = time;
+        stats.retailApply = 0;
     }
 }

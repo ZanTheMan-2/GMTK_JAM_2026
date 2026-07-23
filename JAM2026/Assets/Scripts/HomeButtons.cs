@@ -32,4 +32,8 @@ public class HomeButtons : MonoBehaviour
     {
         sceneManagey.SwitchScene("Map");
     }
+    public void pcButton()
+    {
+        sceneManagey.SwitchScene("Pc");
+    }
 }
