@@ -21,7 +21,7 @@ public class SceneManagey : MonoBehaviour
 
 IEnumerator waiter(String scene)
 {
-    yield return new WaitForSeconds(1.5f);
+    yield return new WaitForSeconds(0.8f);
     Debug.Log("loading now: '" + scene + "'");
     stats.SceneSwitched();
     SceneManager.LoadScene(scene);

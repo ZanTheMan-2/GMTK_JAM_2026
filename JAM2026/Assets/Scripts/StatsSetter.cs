@@ -13,5 +13,6 @@ public class StatsSetter : MonoBehaviour
         stats.currentTime = time;
         stats.retailApply = 0;
         stats.currentLandlord = 0;
+        stats.currentLandlord = 0;
     }
 }

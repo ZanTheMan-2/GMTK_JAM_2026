@@ -4,9 +4,9 @@ using TMPro;
 using UnityEditor.PackageManager;
 public class FridgeButtons : MonoBehaviour
 {
-    public int saladPrice, burgerPrice;
-    public int saladEnergy, saladHealth, burgerHealth, burgerEnergy;
-    public TextMeshProUGUI errorText, burgerText, saladText;
+    public int saladPrice, burgerPrice, waterPrice,energyPrice;
+    public int saladEnergy, saladHealth, burgerHealth, burgerEnergy,waterHealth, waterEnergy, energyEnergy, energyHealth;
+    public TextMeshProUGUI errorText, burgerText, saladText, waterText, energyText;
    public GameObject houseGUI, bg;
    public Stats stats;
 
@@ -17,6 +17,10 @@ public class FridgeButtons : MonoBehaviour
         errorText.SetText(" ");
         burgerText.SetText($"Price {burgerPrice}\nHealth {burgerHealth}\nEnergy {burgerEnergy}");
         saladText.SetText($"Price {saladPrice}\nHealth {saladHealth}\nEnergy {saladEnergy}");
+        waterText.SetText($"Price {waterPrice}\nHealth {waterHealth}\nEnergy {waterEnergy}");
+        energyText.SetText($"Price {energyPrice}\nHealth {energyHealth}\nEnergy {energyEnergy}");
+
+
     }
     public void leaveButton()
     {
@@ -45,6 +49,34 @@ public class FridgeButtons : MonoBehaviour
             stats.currentHealth += saladHealth;
             stats.currentEnergy += saladEnergy;
             stats.currentCash -= saladPrice;
+
+        }
+        else
+        {
+            errorText.SetText("Dont have enough money!");
+        }
+    }
+    public void waterBTN()
+    {
+        if(stats.currentCash > waterPrice)
+        {
+            stats.currentHealth += waterHealth;
+            stats.currentEnergy += waterEnergy;
+            stats.currentCash -= waterPrice;
+
+        }
+        else
+        {
+            errorText.SetText("Dont have enough money!");
+        }
+    }
+    public void energyBTN()
+    {
+        if(stats.currentCash > energyPrice)
+        {
+            stats.currentHealth += energyHealth;
+            stats.currentEnergy += energyEnergy;
+            stats.currentCash -= energyPrice;
 
         }
         else
