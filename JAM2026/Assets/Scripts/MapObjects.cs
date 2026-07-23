@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "MapObjects", menuName = "Scriptable Objects/MapObjects")]
 public class MapObjects : ScriptableObject
 {
-    public Scene areaScene;
-    public int walkEnergyCost, walkHealthGain, walkTimeCost, carEnergyCost, carTimeCost;
+    public string sceneName;
     public string locationName;
+    public int walkEnergyCost, walkHealthGain, walkTimeCost;
+    public int carEnergyCost, carTimeCost, carPriceCost;
 }

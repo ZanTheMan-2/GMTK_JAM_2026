@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac6d7cab27e2d34bba3b7af84ceab77, type: 3}
+  m_Name: Retail
+  m_EditorClassIdentifier: Assembly-CSharp::MapObjects
+  sceneName: Retail
+  locationName: Retail Store
+  walkEnergyCost: 4
+  walkHealthGain: 1
+  walkTimeCost: 4
+  carEnergyCost: 2
+  carTimeCost: 2
+  carPriceCost: 50
