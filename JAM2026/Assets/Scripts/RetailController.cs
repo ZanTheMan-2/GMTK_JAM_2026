@@ -14,12 +14,13 @@ public class RetailController : MonoBehaviour
     public SceneManagey sceneManagey;
     public Stats stats;
 
-    public dialogController conStep1;   
-    public dialogController conStep2;  
+    public dialogController conStep1;
+    public dialogController conStep2;
+    public dialogController conStep3;
 
     public TextMeshProUGUI questionsText;
     public TextMeshProUGUI[] answerLabels = new TextMeshProUGUI[4];
-    public GameObject quizz, canva, gui, getHiredStep1, getHiredStep2;
+    public GameObject quizz, canva, gui, getHiredStep1, getHiredStep2, getHiredStep3;
     public GameObject resultPanel;
     public TextMeshProUGUI resultText;
 
@@ -36,6 +37,7 @@ public class RetailController : MonoBehaviour
         if (resultPanel != null) resultPanel.SetActive(false);
         getHiredStep1.SetActive(false);
         getHiredStep2.SetActive(false);
+        getHiredStep3.SetActive(false);
     }
 
     public void leaveButton()
@@ -45,7 +47,7 @@ public class RetailController : MonoBehaviour
 
     public void getJobButton()
     {
-        if (conStep1.IsRunning || conStep2.IsRunning) return;
+        if (conStep1.IsRunning || conStep2.IsRunning || conStep3.IsRunning) return;
         if (quizz.activeSelf) return;
         if (resultPanel != null && resultPanel.activeSelf) return;
 
@@ -55,6 +57,7 @@ public class RetailController : MonoBehaviour
         {
             getHiredStep1.SetActive(true);
             getHiredStep2.SetActive(false);
+            getHiredStep3.SetActive(false);
             active = conStep1;
             stats.retailApply = 1;
         }
@@ -62,11 +65,19 @@ public class RetailController : MonoBehaviour
         {
             getHiredStep1.SetActive(false);
             getHiredStep2.SetActive(true);
+            getHiredStep3.SetActive(false);
             active = conStep2;
+        }
+        else if (stats.retailApply == 3)
+        {
+            getHiredStep1.SetActive(false);
+            getHiredStep2.SetActive(false);
+            getHiredStep3.SetActive(true);
+            active = conStep3;
         }
         else
         {
-            return;   
+            return;   // nothing to do at this stage
         }
 
         canva.SetActive(true);
@@ -82,6 +93,7 @@ public class RetailController : MonoBehaviour
     {
         getHiredStep1.SetActive(false);
         getHiredStep2.SetActive(false);
+        getHiredStep3.SetActive(false);
 
         if (stats.retailApply != 2) return;
         quiz();
@@ -147,7 +159,10 @@ public class RetailController : MonoBehaviour
 
         resultPanel.SetActive(true);
     }
-
+    public void unpaid()
+    {
+        sceneManagey.SwitchScene("Till");
+    }
     public void CloseResult()
     {
         resultPanel.SetActive(false);
