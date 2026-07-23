@@ -59,6 +59,11 @@ public class Map : MonoBehaviour
         Travel();
     }
 
+    public void homeButton()
+    {
+        sceneManager.SwitchScene("Home");
+    }
+
     public void No()
     {
         confirmationUI.SetActive(false);

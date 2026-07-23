@@ -25,7 +25,6 @@ public class dialogController : MonoBehaviour
     private void Start()
     {
         spriteRenderer.enabled = true;
-        canva.SetActive(true);
         gui.SetActive(false);
         StartCoroutine(waiter());
     }

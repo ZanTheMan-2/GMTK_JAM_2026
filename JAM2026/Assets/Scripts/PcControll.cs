@@ -28,14 +28,14 @@ public class PcControll : MonoBehaviour
     }
     public void applyButton()
     {
-        if(stats.retailApply == 1)
+        if(stats.retailApply == 0)
         {
             applyText.SetText("Failed");
         }
         else
         {
             applyText.SetText("Succsess");
-            stats.retailApply = 1;
+            stats.retailApply = 2;
         }
     }
     public void officeButton()

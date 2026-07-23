@@ -4,8 +4,8 @@ using TMPro;
 
 public class Stats : MonoBehaviour
 {
-    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply;
-    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply;
+    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord;
+    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord;
     public SceneManagey sceneManager;
     public Slider energy, health;
     public TextMeshProUGUI moneyText;
@@ -21,6 +21,7 @@ public class Stats : MonoBehaviour
             currentTime   = PlayerPrefs.GetInt("Time");
             currentCash   = PlayerPrefs.GetInt("Cash");
             retailApply = PlayerPrefs.GetInt("retailApply");
+            currentLandlord = PlayerPrefs.GetInt("LandLord");
         }
         else
         {
@@ -29,6 +30,7 @@ public class Stats : MonoBehaviour
             currentTime   = starterTime;
             currentCash   = starterCash;
             retailApply = starterRetailApply;
+            currentLandlord = starterLandlord;
 
             PlayerPrefs.SetInt("statsExist", 1);
             SceneSwitched();
@@ -43,6 +45,7 @@ public class Stats : MonoBehaviour
         PlayerPrefs.SetInt("Health", currentHealth);
         PlayerPrefs.SetInt("Time", currentTime);
         PlayerPrefs.SetInt("retailApply", retailApply);
+        PlayerPrefs.SetInt("LandLord", currentLandlord);
         PlayerPrefs.Save();
     }
 

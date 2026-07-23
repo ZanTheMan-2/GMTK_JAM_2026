@@ -1651,10 +1651,14 @@ MonoBehaviour:
   starterHealth: 0
   starterTime: 0
   starterCash: 0
+  starterRetailApply: 0
+  starterLandlord: 0
   currentEnergy: 0
   currentHealth: 0
   currentTime: 0
   currentCash: 0
+  retailApply: 0
+  currentLandlord: 0
   sceneManager: {fileID: 1132099911}
   energy: {fileID: 1293761387}
   health: {fileID: 800211159}
@@ -1715,7 +1719,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0fbdfeccfe7e4173b0785853bfa584f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RetailController
+  canva: {fileID: 125646627}
   getHiredStep1: {fileID: 2072048816}
+  getHiredStep2: {fileID: 1382941198}
 --- !u!82 &1132099914
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2114,6 +2120,75 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1382941198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382941200}
+  - component: {fileID: 1382941199}
+  m_Layer: 0
+  m_Name: getHiredDialog2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1382941199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382941198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90da1c55e6e474a72b5f4ee90cc545af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::dialogController
+  swapScene: 0
+  sceneName: 
+  audioSource: {fileID: 1132099914}
+  sceneManagey: {fileID: 1132099911}
+  text:
+  - 'Oh wow, you managed to get accepted in our online signup. '
+  - 'Well, now I think I am supposed to give you the interview questions, huh? '
+  - 'Just fill in these and make sure you fill them in correctly.  '
+  whoIsTalking:
+  - ShopMan
+  - ShopMan
+  - ShopMan
+  person:
+  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  voice:
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  achualText: {fileID: 125646629}
+  whoIsTalkingText: {fileID: 125646628}
+  canva: {fileID: 125646627}
+  gui: {fileID: 1945574546}
+  spriteRenderer: {fileID: 1253858386}
+--- !u!4 &1382941200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382941198}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 234.89758, y: 74.40099, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1628605580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +2742,7 @@ SceneRoots:
   - {fileID: 1132099909}
   - {fileID: 1253858387}
   - {fileID: 2072048818}
+  - {fileID: 1382941200}
   - {fileID: 125646625}
   - {fileID: 1628605583}
   - {fileID: 1945574550}
