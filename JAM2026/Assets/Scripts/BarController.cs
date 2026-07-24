@@ -12,8 +12,8 @@ public class BarStage
 
 public class BarController : MonoBehaviour
 {
-    private SceneManagey sceneManagey;
-    private Stats stats;
+    public SceneManagey sceneManagey;
+    public Stats stats;
 
     public GameObject canva, gui;
     public BarStage[] stages;
@@ -21,8 +21,7 @@ public class BarController : MonoBehaviour
 
     private void Start()
     {
-        sceneManagey = GetComponent<SceneManagey>();
-        stats = GetComponent<Stats>();
+        if(stats.currentBarPoints == 0) canva.SetActive(true);
         HideAllStages();
     }
 

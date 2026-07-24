@@ -217,6 +217,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22853477}
   m_CullTransparentMesh: 1
+--- !u!1 &124140821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124140823}
+  - component: {fileID: 124140822}
+  m_Layer: 0
+  m_Name: chatconvo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &124140822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124140821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90da1c55e6e474a72b5f4ee90cc545af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::dialogController
+  beginOnStart: 1
+  swapScene: 0
+  sceneName: 
+  audioSource: {fileID: 1231207386}
+  sceneManagey: {fileID: 1231207389}
+  text:
+  - 'Heyyyyyyyy, I see we have a new lost soul that wandered into the afterlife.  '
+  - 'Well, I can tell you now that this is the right place for you, my friend. '
+  - 'The afterlife takes people like you and gives them a second chance.  '
+  - 'That said, most people that come in toss that second chance away. '
+  - 'What? You thought that the afterlife is just going to give you what you want? '
+  - 'You should know that there are two different types of afterlives, and one of
+    them is better than the other.  '
+  - 'Best of luck for you, buddy. '
+  - 'And welcome to the Afterlife '
+  whoIsTalking:
+  - Land Lord
+  - Land Lord
+  - Land Lord
+  - Land Lord
+  - Land Lord
+  - Land Lord
+  - Land Lord
+  - Land Lord
+  person:
+  - {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
+  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
+  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
+  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
+  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
+  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
+  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
+  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
+  voice:
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  achualText: {fileID: 1852728391}
+  whoIsTalkingText: {fileID: 1852728390}
+  canva: {fileID: 1852728389}
+  gui: {fileID: 1780283915}
+  spriteRenderer: {fileID: 2131693834}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1231207392}
+        m_TargetAssemblyTypeName: BarController, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &124140823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124140821}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 286.15137, y: 2.96163, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232026509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,8 +1167,8 @@ GameObject:
   - component: {fileID: 1231207390}
   - component: {fileID: 1231207389}
   - component: {fileID: 1231207388}
-  - component: {fileID: 1231207387}
   - component: {fileID: 1231207386}
+  - component: {fileID: 1231207392}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1167,68 +1273,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1231207387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231207385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90da1c55e6e474a72b5f4ee90cc545af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::dialogController
-  beginOnStart: 1
-  swapScene: 0
-  sceneName: 
-  audioSource: {fileID: 1231207386}
-  sceneManagey: {fileID: 1231207389}
-  text:
-  - 'Heyyyyyyyy, I see we have a new lost soul that wandered into the afterlife.  '
-  - 'Well, I can tell you now that this is the right place for you, my friend. '
-  - 'The afterlife takes people like you and gives them a second chance.  '
-  - 'That said, most people that come in toss that second chance away. '
-  - 'What? You thought that the afterlife is just going to give you what you want? '
-  - 'You should know that there are two different types of afterlives, and one of
-    them is better than the other.  '
-  - 'Best of luck for you, buddy. '
-  - 'And welcome to the Afterlife '
-  whoIsTalking:
-  - Land Lord
-  - Land Lord
-  - Land Lord
-  - Land Lord
-  - Land Lord
-  - Land Lord
-  - Land Lord
-  - Land Lord
-  person:
-  - {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
-  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
-  voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  achualText: {fileID: 1852728391}
-  whoIsTalkingText: {fileID: 1852728390}
-  canva: {fileID: 1852728389}
-  gui: {fileID: 1780283915}
-  spriteRenderer: {fileID: 2131693834}
-  onFinished:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1231207388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1295,7 @@ MonoBehaviour:
   starterHospitalEnding: 0
   starterHomelessEnding: 0
   starterGameEnd: 0
+  starterBarPoints: 0
   currentEnergy: 4
   currentHealth: 0
   currentTime: 0
@@ -1261,6 +1306,7 @@ MonoBehaviour:
   currentHospitalEnding: 0
   currentHomelessEnding: 0
   currentGameEnd: 0
+  currentBarPoints: 0
   sceneManager: {fileID: 1231207389}
   energy: {fileID: 653658794}
   health: {fileID: 896018482}
@@ -1354,6 +1400,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1231207392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231207385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886a5ae270da045ba9622fb310070f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarController
+  sceneManagey: {fileID: 1231207389}
+  stats: {fileID: 1231207388}
+  canva: {fileID: 1852728389}
+  gui: {fileID: 1780283915}
+  stages:
+  - pointsNeeded: 2
+    Dialog: {fileID: 0}
+    dialog: {fileID: 0}
 --- !u!1 &1375296162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,10 +2010,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 602915142}
+  - {fileID: 1231207391}
   - {fileID: 2131693835}
   - {fileID: 1375296165}
   - {fileID: 1196211116}
-  - {fileID: 1231207391}
   - {fileID: 1780283919}
   - {fileID: 380926004}
   - {fileID: 1852728388}
+  - {fileID: 124140823}

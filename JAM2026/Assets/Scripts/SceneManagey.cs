@@ -12,7 +12,6 @@ public class SceneManagey : MonoBehaviour
     {
         if (stats.currentGameEnd == 0)
         {
-            stats.currentGameEnd =1;
            if(stats.currentHealth <= 0) {
             stats.currentHospitalEnding = 1;
             SwitchScene("HospitalEnding");
