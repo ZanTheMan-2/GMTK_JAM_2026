@@ -594,7 +594,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 867394606}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 986318679}
+        m_TargetAssemblyTypeName: MainMenyController, Assembly-CSharp
+        m_MethodName: playButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &867394606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,8 +679,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -295, y: 168}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -165.372, y: 168}
+  m_SizeDelta: {x: 459.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970956439
 MonoBehaviour:
@@ -717,8 +729,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -784,6 +796,7 @@ GameObject:
   - component: {fileID: 986318679}
   - component: {fileID: 986318678}
   - component: {fileID: 986318677}
+  - component: {fileID: 986318680}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -878,7 +891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagey
   stats: {fileID: 986318678}
-  anim: {fileID: 0}
+  anim: {fileID: 94427584}
   gui: {fileID: 788219566}
 --- !u!114 &986318678
 MonoBehaviour:
@@ -892,21 +905,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090d7a79e5cc6504db776fe076d3b300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stats
-  starterEnergy: 0
-  starterHealth: 0
-  starterTime: 0
-  starterCash: 0
+  starterEnergy: 10
+  starterHealth: 10
+  starterTime: 12
+  starterCash: 500
   starterRetailApply: 0
   starterLandlord: 0
   starterBadEnding: 0
+  starterHospitalEnding: 0
+  starterHomelessEnding: 0
   currentEnergy: 0
-  currentHealth: 0
+  currentHealth: 10
   currentTime: 0
   currentCash: 0
   retailApply: 0
   currentLandlord: 0
   currentBadEnding: 0
-  sceneManager: {fileID: 0}
+  currentHospitalEnding: 0
+  currentHomelessEnding: 0
+  sceneManager: {fileID: 986318677}
   energy: {fileID: 1278680590}
   health: {fileID: 1278680590}
   moneyText: {fileID: 2130743230}
@@ -922,6 +939,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9282847eebf8246629dc90543ac9f70c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenyController
+  endingText: {fileID: 970956439}
+--- !u!114 &986318680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986318673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14cd75453083c4d089b1609e5c95c52d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatsSetter
+  stats: {fileID: 986318678}
+  health: 10
+  money: 500
+  energy: 10
+  time: 12
 --- !u!1 &1238531317
 GameObject:
   m_ObjectHideFlags: 0

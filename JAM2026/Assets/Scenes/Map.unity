@@ -2544,12 +2544,16 @@ MonoBehaviour:
   starterCash: 0
   starterRetailApply: 0
   starterLandlord: 0
+  starterBadEnding: 0
+  starterHospitalEnding: 0
   currentEnergy: 0
   currentHealth: 0
   currentTime: 0
   currentCash: 0
   retailApply: 0
   currentLandlord: 0
+  currentBadEnding: 0
+  currentHospitalEnding: 0
   sceneManager: {fileID: 1425009319}
   energy: {fileID: 1842879398}
   health: {fileID: 329044169}

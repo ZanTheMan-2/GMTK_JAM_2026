@@ -9,6 +9,17 @@ public class SceneManagey : MonoBehaviour
     public GameObject anim;
     public GameObject gui;
 
+    private void Update()
+    {
+        if(stats.currentHealth <= 0) {
+            stats.currentHospitalEnding = 1;
+            SwitchScene("HospitalEnding");
+        }
+        if(stats.currentCash <= 0) {
+            stats.currentHomelessEnding = 1;
+            SwitchScene("HomelessEnding");
+        }
+    }
     public void SwitchScene(String scene)
 {
     Debug.Log("SwitchScene called with: '" + scene + "'");
