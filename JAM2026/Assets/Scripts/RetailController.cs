@@ -152,7 +152,7 @@ public class RetailController : MonoBehaviour
     private void EndQuiz()
     {
         quizz.SetActive(false);
-        gui.SetActive(true);
+       // gui.SetActive(true);
 
         if (score >= passMark)
         {

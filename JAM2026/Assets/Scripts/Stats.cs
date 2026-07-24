@@ -67,7 +67,7 @@ public class Stats : MonoBehaviour
     void Update()
     {
         Debug.Log($"hasKey={PlayerPrefs.HasKey("Energy")} stored={PlayerPrefs.GetInt("Energy", -999)} starter={starterEnergy} current={currentEnergy}");
-        moneyText.SetText(currentCash.ToString());
+        moneyText.SetText($"Money: {currentCash.ToString()}");
         Debug.Log(currentEnergy);
         energy.value = currentEnergy;
         health.value = currentHealth;
