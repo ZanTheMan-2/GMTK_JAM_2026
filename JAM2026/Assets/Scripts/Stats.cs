@@ -4,8 +4,8 @@ using TMPro;
 
 public class Stats : MonoBehaviour
 {
-    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding, starterHospitalEnding, starterHomelessEnding;
-    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding, currentHospitalEnding, currentHomelessEnding;
+    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding, starterHospitalEnding, starterHomelessEnding, starterGameEnd;
+    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding, currentHospitalEnding, currentHomelessEnding,currentGameEnd;
     public SceneManagey sceneManager;
     public Slider energy, health;
     public TextMeshProUGUI moneyText;
@@ -16,6 +16,7 @@ public class Stats : MonoBehaviour
         Debug.Log($"{gameObject.scene.name}: starter={starterEnergy} current={currentEnergy} exists={PlayerPrefs.GetInt("statsExist", 0)}");
         if (PlayerPrefs.GetInt("statsExist", 0) != 0)
         {
+            currentGameEnd = PlayerPrefs.GetInt("GameEnd");
             currentHomelessEnding = PlayerPrefs.GetInt("HomelessEnding");
             currentHospitalEnding = PlayerPrefs.GetInt("HosptalEnding");
             currentBadEnding = PlayerPrefs.GetInt("BadEnding");
@@ -28,6 +29,7 @@ public class Stats : MonoBehaviour
         }
         else
         {
+            currentGameEnd = starterGameEnd;
             currentHomelessEnding = starterHomelessEnding;
             currentHospitalEnding = starterHospitalEnding;
             currentBadEnding = starterBadEnding;
@@ -46,6 +48,7 @@ public class Stats : MonoBehaviour
     // Called whenever the scene is changed
     public void SceneSwitched()
     {
+        PlayerPrefs.SetInt("GameEnd", currentGameEnd);
         PlayerPrefs.SetInt("HomelessEnding", currentHomelessEnding);
         PlayerPrefs.SetInt("HosptalEnding", currentHospitalEnding);
         PlayerPrefs.SetInt("BadEnding", currentBadEnding);

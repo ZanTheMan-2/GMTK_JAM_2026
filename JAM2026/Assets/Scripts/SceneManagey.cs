@@ -8,17 +8,22 @@ public class SceneManagey : MonoBehaviour
     public Stats stats;
     public GameObject anim;
     public GameObject gui;
-
     private void Update()
     {
-        if(stats.currentHealth <= 0) {
+        if (stats.currentGameEnd == 0)
+        {
+            stats.currentGameEnd =1;
+           if(stats.currentHealth <= 0) {
             stats.currentHospitalEnding = 1;
             SwitchScene("HospitalEnding");
         }
-        if(stats.currentCash <= 0) {
+        else if(stats.currentCash <= 0) {
+            stats.currentGameEnd =1;
             stats.currentHomelessEnding = 1;
             SwitchScene("HomelessEnding");
+        } 
         }
+        
     }
     public void returnButton()
     {

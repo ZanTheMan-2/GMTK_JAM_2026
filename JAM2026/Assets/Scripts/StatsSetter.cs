@@ -14,5 +14,6 @@ public class StatsSetter : MonoBehaviour
         stats.retailApply = 0;
         stats.currentLandlord = 0;
         stats.currentLandlord = 0;
+        stats.currentGameEnd = 1;
     }
 }
