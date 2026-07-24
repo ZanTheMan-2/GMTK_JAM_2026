@@ -1279,11 +1279,11 @@ GameObject:
   m_Component:
   - component: {fileID: 986318676}
   - component: {fileID: 986318675}
+  - component: {fileID: 986318680}
   - component: {fileID: 986318674}
   - component: {fileID: 986318679}
   - component: {fileID: 986318678}
   - component: {fileID: 986318677}
-  - component: {fileID: 986318680}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1402,6 +1402,7 @@ MonoBehaviour:
   starterHospitalEnding: 0
   starterHomelessEnding: 0
   starterGameEnd: 0
+  starterBarPoints: 0
   currentEnergy: 0
   currentHealth: 10
   currentTime: 0
@@ -1412,6 +1413,7 @@ MonoBehaviour:
   currentHospitalEnding: 0
   currentHomelessEnding: 0
   currentGameEnd: 0
+  currentBarPoints: 0
   sceneManager: {fileID: 986318677}
   energy: {fileID: 1278680590}
   health: {fileID: 1278680590}
