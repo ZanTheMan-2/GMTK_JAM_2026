@@ -271,14 +271,14 @@ MonoBehaviour:
   - Bar Owner
   - Bar Owner
   person:
-  - {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
-  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 2353848032342314181, guid: ffc9bcb80e02e43feaf3da771cc4e613, type: 3}
+  - {fileID: -4423990712768553339, guid: e0e5a0b84f8c74ea29fe2293eeab9e34, type: 3}
+  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
+  - {fileID: 5558125661107001406, guid: 8dba92cd074084ab39dd1c29b1663fff, type: 3}
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
+  - {fileID: -5299578741340934870, guid: 2f1413c2857944ec48c3de64b1568c84, type: 3}
   voice:
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
@@ -1873,10 +1873,10 @@ MonoBehaviour:
   - Bar Owner
   - Bar Owner
   person:
-  - {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
-  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 5558125661107001406, guid: 8dba92cd074084ab39dd1c29b1663fff, type: 3}
+  - {fileID: -5299578741340934870, guid: 2f1413c2857944ec48c3de64b1568c84, type: 3}
+  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   voice:
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
@@ -2589,6 +2589,7 @@ MonoBehaviour:
   - 'You know, right? You don''t have to just talk to me, right? The afterlife is
     filled with fun people. '
   - Actually.
+  - 'HEY JO COME OVER HERE. '
   - 'Howdy, why ye ruffling my feathers, huh, good sir? '
   - 'Oh? '
   - 'A new friend for you. '
@@ -2601,15 +2602,18 @@ MonoBehaviour:
   - Jo
   - Bar Owner
   - Jo
+  - Jo
   person:
-  - {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
-  - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
-  - {fileID: -9199083128680593448, guid: 407e725cfee664804a13db5eefc9d5da, type: 3}
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 5558125661107001406, guid: 8dba92cd074084ab39dd1c29b1663fff, type: 3}
+  - {fileID: -4423990712768553339, guid: e0e5a0b84f8c74ea29fe2293eeab9e34, type: 3}
+  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 2353848032342314181, guid: ffc9bcb80e02e43feaf3da771cc4e613, type: 3}
+  - {fileID: -5299578741340934870, guid: 2f1413c2857944ec48c3de64b1568c84, type: 3}
+  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   voice:
+  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
@@ -2718,7 +2722,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
+  m_Sprite: {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2737,8 +2741,8 @@ Transform:
   m_GameObject: {fileID: 2131693833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1843, y: -2.379, z: 0}
-  m_LocalScale: {x: 8.967757, y: 8.013661, z: 11.3808}
+  m_LocalPosition: {x: -3.02, y: -1.6358, z: 0}
+  m_LocalScale: {x: 10.665353, y: 9.530647, z: 13.535185}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
