@@ -41,6 +41,7 @@ public class dialogController : MonoBehaviour
 
     public void Begin()
     {
+        achualText.SetText("Press 'space' to talk.");
         if (text == null || text.Length == 0)
         {
             Debug.LogWarning($"{gameObject.name}: dialogue has no lines.");

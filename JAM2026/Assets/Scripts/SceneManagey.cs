@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,6 +26,11 @@ public class SceneManagey : MonoBehaviour
         }
         
     }
+    public void back2mapbutton()
+    {
+        SwitchScene("Map");
+    } 
+
     public void returnButton()
     {
         SwitchScene("MainMenu");

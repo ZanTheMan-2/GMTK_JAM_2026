@@ -1,11 +1,10 @@
 using UnityEngine;
-using TMPro;
 
 [System.Serializable]
 public class BarStage
 {
-    public int pointsNeeded;        // bar points required to reach this stage
-    public int pointsAwarded = 1;   // points gained once this one is finished
+    public int pointsNeeded;       
+    public int pointsAwarded = 1;  
     public GameObject Dialog;
     public dialogController dialog;
 }
@@ -47,26 +46,27 @@ public class BarController : MonoBehaviour
         if (AnyDialogRunning()) return;
         if (stats.currentEnergy < 1) return;
 
-        BarStage best = null;
+        BarStage match = null;
 
-        // highest stage the player currently qualifies for
+        // only the stage whose pointsNeeded equals the current points
         foreach (BarStage s in stages)
         {
-            if (stats.currentBarPoints >= s.pointsNeeded)
+            if (s.pointsNeeded == stats.currentBarPoints)
             {
-                if (best == null || s.pointsNeeded > best.pointsNeeded) best = s;
+                match = s;
+                break;
             }
         }
 
-        if (best == null || best.dialog == null) return;
+        if (match == null || match.dialog == null) return;
 
         stats.currentEnergy -= 1;
-        current = best;
+        current = match;
 
         HideAllStages();
-        best.Dialog.SetActive(true);
+        match.Dialog.SetActive(true);
         canva.SetActive(true);
-        best.dialog.Begin();
+        match.dialog.Begin();
     }
 
     // wire to every stage dialogue's On Finished ()

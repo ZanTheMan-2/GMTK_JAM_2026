@@ -1256,7 +1256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104882414}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1231207389}
+        m_TargetAssemblyTypeName: SceneManagey, Assembly-CSharp
+        m_MethodName: back2mapbutton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1104882414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1675,6 +1687,10 @@ MonoBehaviour:
     pointsAwarded: 1
     Dialog: {fileID: 1852728389}
     dialog: {fileID: 1302248551}
+  - pointsNeeded: 2
+    pointsAwarded: 1
+    Dialog: {fileID: 1852728389}
+    dialog: {fileID: 1917575807}
 --- !u!1 &1297753918
 GameObject:
   m_ObjectHideFlags: 0
