@@ -16,7 +16,7 @@ public class MainMenyController : MonoBehaviour
     }
     private void Start()
     {
-        endingText.SetText($"Bad Ending: {badEnding}\nGood Ending: false\nHomeles Ending: {homelessEndingg}\n Dead Ending: {deadEnding}\n Bar Ending: false");   
+        endingText.SetText($"Bad End: {badEnding}\nGood End: false\nHomeles End: {homelessEndingg}\n Dead End: {deadEnding}\n Bar Ending: false");   
     }
     public void playButton()
     {

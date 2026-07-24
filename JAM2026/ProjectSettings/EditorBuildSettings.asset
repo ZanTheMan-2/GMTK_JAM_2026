@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Retail.unity
     guid: 8ebb26b917a104669828f84bdd28043e
   - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: 4fcac3c629a06420aad82b48e9038f2a
+  - enabled: 1
     path: Assets/Scenes/Office.unity
     guid: f583a79c99fd94eb88d89c53407a1ae7
   - enabled: 1
