@@ -476,6 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90da1c55e6e474a72b5f4ee90cc545af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::dialogController
+  beginOnStart: 1
   swapScene: 1
   sceneName: Home
   audioSource: {fileID: 1241221192}
@@ -534,6 +535,9 @@ MonoBehaviour:
   canva: {fileID: 679619037}
   gui: {fileID: 513564024}
   spriteRenderer: {fileID: 1386026639}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1241221188
 SpriteRenderer:
   serializedVersion: 2
@@ -624,10 +628,20 @@ MonoBehaviour:
   starterHealth: 7
   starterTime: 57
   starterCash: 500
+  starterRetailApply: 0
+  starterLandlord: 0
+  starterBadEnding: 0
+  starterHospitalEnding: 0
+  starterHomelessEnding: 0
   currentEnergy: 0
   currentHealth: 0
   currentTime: 0
   currentCash: 0
+  retailApply: 0
+  currentLandlord: 0
+  currentBadEnding: 0
+  currentHospitalEnding: 0
+  currentHomelessEnding: 0
   sceneManager: {fileID: 1241221191}
   energy: {fileID: 1801162161}
   health: {fileID: 1801162161}
@@ -933,8 +947,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 59af5fb6f431c48ae84a3c8190552d7b, type: 2}
+  m_sharedMaterial: {fileID: -2313745501641636665, guid: 59af5fb6f431c48ae84a3c8190552d7b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1589,6 +1603,30 @@ PrefabInstance:
     - target: {fileID: 4626259511985732747, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
       propertyPath: m_text
       value: Press "space" to talk.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626259511985732747, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 59af5fb6f431c48ae84a3c8190552d7b, type: 2}
+    - target: {fileID: 4626259511985732747, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2313745501641636665, guid: 59af5fb6f431c48ae84a3c8190552d7b, type: 2}
+    - target: {fileID: 4626259511985732747, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823643365445780109, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 59af5fb6f431c48ae84a3c8190552d7b, type: 2}
+    - target: {fileID: 5823643365445780109, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2313745501641636665, guid: 59af5fb6f431c48ae84a3c8190552d7b, type: 2}
+    - target: {fileID: 5823643365445780109, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8458340912792858050, guid: b280d2d1ae7074c14abb34b9aebed421, type: 3}
       propertyPath: m_Pivot.x

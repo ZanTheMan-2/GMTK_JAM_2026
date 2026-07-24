@@ -20,6 +20,10 @@ public class SceneManagey : MonoBehaviour
             SwitchScene("HomelessEnding");
         }
     }
+    public void returnButton()
+    {
+        SwitchScene("MainMenu");
+    }
     public void SwitchScene(String scene)
 {
     Debug.Log("SwitchScene called with: '" + scene + "'");
