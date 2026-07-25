@@ -3551,6 +3551,7 @@ GameObject:
   - component: {fileID: 1554177792}
   - component: {fileID: 1554177791}
   - component: {fileID: 1554177790}
+  - component: {fileID: 1554177793}
   m_Layer: 5
   m_Name: AnimEntrance
   m_TagString: Untagged
@@ -3637,6 +3638,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554177788}
   m_CullTransparentMesh: 1
+--- !u!82 &1554177793
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554177788}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 50f1304a3f9fab343b5b73231fc09c1c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.265
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1594287249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,8 +4039,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_Resource: {fileID: 8300000, guid: 50f1304a3f9fab343b5b73231fc09c1c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4046,28 +4144,25 @@ MonoBehaviour:
   sceneManagey: {fileID: 1735145909}
   text:
   - 'Greetings, this is your one and only landlord. '
-  - 'I bet You weren''t expecting me to call so quickly. '
-  - 'My connections have told me a humorous tale, though. '
+  - 'I bet you weren''t expecting me to call so quickly. '
+  - 'My connections have told me a funny tale, though. '
   - 'I''ve heard that you lost your job because, like a total moron, an AI took over
-    your post. '
+    your one and only job. '
   - 'Personally, I could never do that, you have to be a complete loser to lose your
     sole source of income to a robot.  '
   - 'In any case, do you want to know why some people refer to me as the IRS? '
-  - 'Because I always get paid, you can''t get away from me with any amount of running,
+  - 'Because I always get paid, you can''t get away from me even if you try to run,
     and I''m going to kick you out if I don''t get paid.  '
-  - 'This will be your mission, so you will do this and pay close attention.  '
+  - 'This will be your mission, so you better pay attention to this.  '
   - 'First, survive. If you die, I won''t receive any money.  '
-  - 'Make sure you don''t miss those and that you have enough money every day to
-    pay me. '
+  - 'I will also be here to collect my money each day, and you know what happens
+    when I don''t get paid. '
   - 'You won''t be able to go anywhere if you don''t eat and sleep to boost your
     energy.  '
   - 'You will slow down and your days will seem shorter if you don''t take care of
     your health, watch what you eat, go for walks, and so on.  '
-  - 'In light of this, keep in mind that each day has a finite amount of time, so
-    make the most of it.  '
   - 'Either way, good luck, kid, and take care when you''re counting down your money.  '
   whoIsTalking:
-  - Land Lord
   - Land Lord
   - Land Lord
   - Land Lord
@@ -4095,22 +4190,20 @@ MonoBehaviour:
   - {fileID: 5137393239796541361, guid: fd8c02090766b4c56811c153bb1d5fb5, type: 3}
   - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
   - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
-  - {fileID: -2078572889486519775, guid: 9e63e98b39e564c3ca4a1484207a7fda, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: fa9d684e86ec9498dbc6d76b374631a0, type: 3}
+  - {fileID: 8300000, guid: fda1d3e44f158c142a06e0de057116ad, type: 3}
+  - {fileID: 8300000, guid: aa1bf0f90c929f44085a199964d54f65, type: 3}
+  - {fileID: 8300000, guid: 6470757cdae3b61429c185f3506e006f, type: 3}
+  - {fileID: 8300000, guid: 8636ac6c28924ef45a76fb4736d275d5, type: 3}
+  - {fileID: 8300000, guid: e177b8f15e3499c4f890b3cdf6589bc0, type: 3}
+  - {fileID: 8300000, guid: 0ab930867df43d34e9cf1b354d77371a, type: 3}
+  - {fileID: 8300000, guid: 046f9fcc0bb77c841bd141c170e54b7e, type: 3}
+  - {fileID: 8300000, guid: 029851e4aca46854f833f53d46c3a09d, type: 3}
+  - {fileID: 8300000, guid: 9aa5b1dc8ca3f3448ab1973737d30514, type: 3}
+  - {fileID: 8300000, guid: 619dc3bd5f554d0499ff0077529f41b4, type: 3}
+  - {fileID: 8300000, guid: 923a121dd8297dd47a0681de77ded974, type: 3}
+  - {fileID: 8300000, guid: 72d6326890d62c94a8c0e55f8b4c8596, type: 3}
   achualText: {fileID: 60142569}
   whoIsTalkingText: {fileID: 60142568}
   canva: {fileID: 60142566}
@@ -4262,6 +4355,7 @@ MonoBehaviour:
   kitchenGUI: {fileID: 1869332410}
   buttons: {fileID: 185570358}
   bg: {fileID: 1496171721}
+  homeButton: {fileID: 1026526552}
   stats: {fileID: 1735145908}
   sleepCost: 100
 --- !u!114 &1735145913

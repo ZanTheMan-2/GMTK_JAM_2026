@@ -1,20 +1,24 @@
 using UnityEngine;
-
+using TMPro;
 [System.Serializable]
 public class BarStage
 {
-    public int pointsNeeded;       
+    public int pointsNeeded;
     public int pointsAwarded = 1;  
     public GameObject Dialog;
     public dialogController dialog;
+
 }
 
 public class BarController : MonoBehaviour
 {
+    private int price,  health,  energy,  effect;
+    public TextMeshProUGUI priceText;
+
     public SceneManagey sceneManagey;
     public Stats stats;
 
-    public GameObject canva, gui;
+    public GameObject canva, gui, itemBuys, buttons;
     public BarStage[] stages;
 
     private BarStage current;
@@ -22,6 +26,7 @@ public class BarController : MonoBehaviour
     private void Start()
     {
         HideAllStages();
+        itemBuys.SetActive(false);
     }
 
     private void HideAllStages()
@@ -80,14 +85,58 @@ public class BarController : MonoBehaviour
             current = null;
         }
     }
+        //Buttons
 
     public void AddPoints(int amount)
     {
         stats.currentBarPoints += amount;
     }
+    public void displayItemButton()
+    {
+        buttons.SetActive(false);
+       itemBuys.SetActive(true) ;
+    }
+    public void closeItemsButton()
+    {
+        buttons.SetActive(true);
+        itemBuys.SetActive(false);
+    }
+    private void select(int Price, int Health, int Energy, int Effect)
+    {
+        price = Price; health = Health; energy = Energy; effect =Effect;
+        priceText.SetText(Price.ToString());
+    }
 
+    public void waterButton() {select(10,1,0,0);}
+    public void beerButton() {select(15,-2,-2,0);}
+    public void deathDrinkButton() {select(400,-10,2,0);}
+    public void theAfterLifeButton() {select(400,1,1,2);}
+
+    public void buyButton()
+    {
+        if(stats.currentCash >= price)
+        {
+            stats.currentCash -= price;
+            stats.currentHealth += health;
+            stats.currentEnergy +=energy;
+
+            if(effect == 2){
+                stats.currentBarEnd = 1;
+                 barEnd();
+                 }
+        }
+        else
+        {
+            priceText.SetText("Too Poor");
+        }
+    }
     public void leaveButton()
     {
         sceneManagey.SwitchScene("Map");
+    }
+
+    private void barEnd()
+    {
+        sceneManagey.SwitchScene("BarEnd");
     }
 }

@@ -4,15 +4,17 @@ using TMPro;
 public class Map : MonoBehaviour
 {
     public GameObject confirmationUI;
-    public TextMeshProUGUI carEnergyText, carTimeText, walkEnergyText,
+    public TextMeshProUGUI carEnergyText, carTimeText, walkEnergyText, homeText,
                            walkHealthText, walkTimeText, locationText;
     public SceneManagey sceneManager;
     public Stats stats;
-
+    private int k;
     private MapObjects selected;
 
     void Start()
     {
+        k = 0;
+        homeText.SetText("Home");
         confirmationUI.SetActive(false);
     }
 
@@ -61,7 +63,13 @@ public class Map : MonoBehaviour
 
     public void homeButton()
     {
-        sceneManager.SwitchScene("Home");
+        homeText.SetText("End day?");
+        if(k>0){
+            stats.currentTime = 1;
+            sceneManager.SwitchScene("Home");
+            }
+        k++;
+        return;
     }
 
     public void No()

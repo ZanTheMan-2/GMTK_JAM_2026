@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Bar.unity
     guid: 4fcac3c629a06420aad82b48e9038f2a
   - enabled: 1
+    path: Assets/Scenes/Alley.unity
+    guid: fcf1bb916ef754133aa1c8bb3907256c
+  - enabled: 1
     path: Assets/Scenes/Office.unity
     guid: f583a79c99fd94eb88d89c53407a1ae7
   - enabled: 1
@@ -35,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadEnding.unity
     guid: 2e32181c603b3405cbe045b0b0b7dd0f
+  - enabled: 1
+    path: Assets/Scenes/BarEnd.unity
+    guid: 5f3b8e6a3749b4306b8e66490d118825
   - enabled: 1
     path: Assets/Scenes/HomelessEnding.unity
     guid: 5b9d2b421f3f54924a89ffa54ee716ca

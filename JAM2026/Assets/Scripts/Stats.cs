@@ -4,8 +4,8 @@ using TMPro;
 
 public class Stats : MonoBehaviour
 {
-    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding, starterHospitalEnding, starterHomelessEnding, starterGameEnd, starterBarPoints;
-    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding, currentHospitalEnding, currentHomelessEnding,currentGameEnd, currentBarPoints;
+    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding, starterHospitalEnding, starterHomelessEnding, starterGameEnd, starterBarPoints, starterBarEnd;
+    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding, currentHospitalEnding, currentHomelessEnding,currentGameEnd, currentBarPoints, currentBarEnd;
     public SceneManagey sceneManager;
     public Slider energy, health;
     public TextMeshProUGUI moneyText;
@@ -16,6 +16,7 @@ public class Stats : MonoBehaviour
         Debug.Log($"{gameObject.scene.name}: starter={starterEnergy} current={currentEnergy} exists={PlayerPrefs.GetInt("statsExist", 0)}");
         if (PlayerPrefs.GetInt("statsExist", 0) != 0)
         {
+            currentBarEnd = PlayerPrefs.GetInt("BarEnd");
             currentBarPoints = PlayerPrefs.GetInt("BarPoints");
             currentGameEnd = PlayerPrefs.GetInt("GameEnd");
             currentHomelessEnding = PlayerPrefs.GetInt("HomelessEnding");
@@ -30,6 +31,7 @@ public class Stats : MonoBehaviour
         }
         else
         {
+            currentBarEnd = starterBarEnd;
             currentBarPoints = starterBarPoints;
             currentGameEnd = starterGameEnd;
             currentHomelessEnding = starterHomelessEnding;
@@ -50,6 +52,7 @@ public class Stats : MonoBehaviour
     // Called whenever the scene is changed
     public void SceneSwitched()
     {
+        PlayerPrefs.SetInt("BarEnd", currentBarEnd);
         PlayerPrefs.SetInt("BarPoints", currentBarPoints);
         PlayerPrefs.SetInt("GameEnd", currentGameEnd);
         PlayerPrefs.SetInt("HomelessEnding", currentHomelessEnding);

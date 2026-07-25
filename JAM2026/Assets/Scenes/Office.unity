@@ -486,14 +486,14 @@ MonoBehaviour:
   - 'I see you have been doing your work for a chance. '
   - "Well...that's...good\u2026 "
   - 'Umm, so how do I put this without hurting your feelings? '
-  - 'HAH! LIKE I CARE ABOUT FEELINGS! Ok, buddy, here is the deal. '
+  - HAH! LIKE I CARE ABOUT FEELINGS!
+  - ' Ok, buddy, here is the deal. '
   - 'Simply put, you are costing us wayyyyy too much money, and well, that is a crime
     worse than genocide. '
   - 'So HR has come up with a super smart approach! '
   - 'WE are going to replace your useless butt with AI! '
-  - 'HAHAHAHAHHAHAHAHAHAHAHA '
-  - 'Feels good to finally get rid of you. '
-  - 'NOW GET YOUR UGLY FACE OUT OF HERE! '
+  - 'HAHAHAHAHHAHAHAHAHAHAHA Feels good to finally get rid of you. '
+  - Get your ugly face out of here NOW!
   whoIsTalking:
   - Boss
   - Boss
@@ -519,17 +519,17 @@ MonoBehaviour:
   - {fileID: 428158305367614973, guid: b729babfbb37349ec85fe77509f494e8, type: 3}
   - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: a6147fb85ecea944188caf35abf79ab3, type: 3}
+  - {fileID: 8300000, guid: a0fafb06ac587154591eab0ca88e1198, type: 3}
+  - {fileID: 8300000, guid: 91995739fed060d49a43f8a4abfecd31, type: 3}
+  - {fileID: 8300000, guid: 0caafa3eecd6412459af810ec0af28cf, type: 3}
+  - {fileID: 8300000, guid: ef1c0792ca0710d4d9aaaa421b405f91, type: 3}
+  - {fileID: 8300000, guid: f82464411acb95643827372abe5007ee, type: 3}
+  - {fileID: 8300000, guid: 1a2e3a58865399241b1425224cebe9d6, type: 3}
+  - {fileID: 8300000, guid: c1081b62d38e35b45b10de9c18114957, type: 3}
+  - {fileID: 8300000, guid: ab3b3bbb10058bd40a3596ef5068e6bb, type: 3}
+  - {fileID: 8300000, guid: 5d3a17cd33e852b4ea1df369a4370c2e, type: 3}
+  - {fileID: 8300000, guid: 759807cdc6ff83f4fa26ec3d821ced8d, type: 3}
   achualText: {fileID: 677981666}
   whoIsTalkingText: {fileID: 923130605}
   canva: {fileID: 679619037}
@@ -633,6 +633,8 @@ MonoBehaviour:
   starterBadEnding: 0
   starterHospitalEnding: 0
   starterHomelessEnding: 0
+  starterGameEnd: 0
+  starterBarPoints: 0
   currentEnergy: 0
   currentHealth: 0
   currentTime: 0
@@ -642,6 +644,8 @@ MonoBehaviour:
   currentBadEnding: 0
   currentHospitalEnding: 0
   currentHomelessEnding: 0
+  currentGameEnd: 0
+  currentBarPoints: 0
   sceneManager: {fileID: 1241221191}
   energy: {fileID: 1801162161}
   health: {fileID: 1801162161}
@@ -672,7 +676,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 9bc801af50220fd46b8f5b3e186cf068, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1335,6 +1339,7 @@ GameObject:
   - component: {fileID: 1841271285}
   - component: {fileID: 1841271284}
   - component: {fileID: 1841271283}
+  - component: {fileID: 1841271286}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1416,6 +1421,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1841271286
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841271282}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 9bc801af50220fd46b8f5b3e186cf068, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.684
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1908059281
 GameObject:
   m_ObjectHideFlags: 0

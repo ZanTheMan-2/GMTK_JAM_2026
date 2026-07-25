@@ -14,7 +14,7 @@ public class StatsSetter : MonoBehaviour
         stats.currentHealth = health;
         stats.currentEnergy = energy;
         stats.currentCash = money;
-        stats.currentTime = time;
+        stats.currentTime = 0;
         stats.retailApply = 0;
         stats.currentLandlord = 0;
         stats.currentLandlord = 0;

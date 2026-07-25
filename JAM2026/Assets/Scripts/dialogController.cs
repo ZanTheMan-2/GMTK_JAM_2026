@@ -72,6 +72,7 @@ public class dialogController : MonoBehaviour
         if (pos >= text.Length)
         {
             IsRunning = false;
+            audioSource.Stop();
 
             if (swapScene)
             {
@@ -95,7 +96,11 @@ public class dialogController : MonoBehaviour
             spriteRenderer.sprite = person[pos];
 
         if (pos < voice.Length && voice[pos] != null)
-            audioSource.PlayOneShot(voice[pos]);
+        {
+            audioSource.Stop();
+            audioSource.clip = voice[pos];
+            audioSource.Play();
+        }
 
         pos++;
     }

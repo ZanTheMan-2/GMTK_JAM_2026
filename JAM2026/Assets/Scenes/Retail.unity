@@ -172,11 +172,11 @@ MonoBehaviour:
   - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
   - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: e78be96672e772845a72314c34233527, type: 3}
+  - {fileID: 8300000, guid: 1254e379356bd704995c280071200263, type: 3}
+  - {fileID: 8300000, guid: 8a959dce6bfb1624796833c7b1d88a39, type: 3}
+  - {fileID: 8300000, guid: ba7c9c319d71606498e349b39b4c2bac, type: 3}
+  - {fileID: 8300000, guid: ac3fdca3c4ff30642bb796b76d733c2d, type: 3}
   achualText: {fileID: 125646629}
   whoIsTalkingText: {fileID: 125646628}
   canva: {fileID: 125646627}
@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 510171641}
   - component: {fileID: 510171640}
   - component: {fileID: 510171639}
+  - component: {fileID: 510171642}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1146,6 +1147,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &510171642
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510171638}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e7c1516631ba5dc40a635fe5903b291c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &558619542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2971,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4634,11 +4732,11 @@ MonoBehaviour:
   - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
   - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 059bb36e396e8084c99fb8bd14b14fff, type: 3}
+  - {fileID: 8300000, guid: 3f6fc02b5e350ae4dbec0a6e53630650, type: 3}
+  - {fileID: 8300000, guid: 308b44e7ea21a4744a0efc720d006eaf, type: 3}
+  - {fileID: 8300000, guid: bd17c865f167a5e4b8be5254c102c4f7, type: 3}
+  - {fileID: 8300000, guid: 4c7e7343bf5acba4789c4b117814a94a, type: 3}
   achualText: {fileID: 125646629}
   whoIsTalkingText: {fileID: 125646628}
   canva: {fileID: 125646627}
@@ -4963,9 +5061,9 @@ MonoBehaviour:
   - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
   - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 39378b416d7e03a45a9ae7d8494c3267, type: 3}
+  - {fileID: 8300000, guid: c900b977ec9e2c042a068cc829c189a2, type: 3}
+  - {fileID: 8300000, guid: d07502c2797c5cd499ddc4038ba80321, type: 3}
   achualText: {fileID: 125646629}
   whoIsTalkingText: {fileID: 125646628}
   canva: {fileID: 125646627}
