@@ -30,7 +30,7 @@ public class FridgeButtons : MonoBehaviour
     }
     public void burgerButton()
     {
-        if(stats.currentCash > burgerPrice)
+        if(stats.currentCash >= burgerPrice)
         {
             stats.currentHealth += burgerHealth;
             stats.currentEnergy += burgerEnergy;
@@ -44,7 +44,7 @@ public class FridgeButtons : MonoBehaviour
     }
     public void saladButton()
     {
-        if(stats.currentCash > saladPrice)
+        if(stats.currentCash >= saladPrice)
         {
             stats.currentHealth += saladHealth;
             stats.currentEnergy += saladEnergy;
@@ -58,7 +58,7 @@ public class FridgeButtons : MonoBehaviour
     }
     public void waterBTN()
     {
-        if(stats.currentCash > waterPrice)
+        if(stats.currentCash >= waterPrice)
         {
             stats.currentHealth += waterHealth;
             stats.currentEnergy += waterEnergy;
@@ -72,7 +72,7 @@ public class FridgeButtons : MonoBehaviour
     }
     public void energyBTN()
     {
-        if(stats.currentCash > energyPrice)
+        if(stats.currentCash >= energyPrice)
         {
             stats.currentHealth += energyHealth;
             stats.currentEnergy += energyEnergy;

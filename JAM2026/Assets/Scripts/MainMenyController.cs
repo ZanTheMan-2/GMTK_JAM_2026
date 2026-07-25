@@ -13,10 +13,11 @@ public class MainMenyController : MonoBehaviour
         if(stats.currentBadEnding == 1) badEnding = true;
         if(stats.currentHospitalEnding ==1) deadEnding = true;
         if(stats.currentHomelessEnding ==1) homelessEndingg = true;
+        if(stats.currentBarEnd ==1) barEnding = true; 
     }
     private void Start()
     {
-        endingText.SetText($"Bad End: {badEnding}\nGood End: false\nHomeles End: {homelessEndingg}\n Dead End: {deadEnding}\n Bar Ending: false");   
+        endingText.SetText($"Bad End: {badEnding}\nGood End: false\nHomeles End: {homelessEndingg}\n Dead End: {deadEnding}\n Bar Ending: {barEnding}");   
     }
     public void playButton()
     {
