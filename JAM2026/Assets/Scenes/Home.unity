@@ -4191,7 +4191,7 @@ MonoBehaviour:
   - {fileID: 5978041700426097938, guid: 6c7d0163c24204988ba54299b1791769, type: 3}
   - {fileID: 2132116508724237705, guid: 2496c0e78aa66415fab74a6d67b6f24a, type: 3}
   voice:
-  - {fileID: 8300000, guid: fa9d684e86ec9498dbc6d76b374631a0, type: 3}
+  - {fileID: 8300000, guid: 9a867f9f1f29184408a470b1c150040d, type: 3}
   - {fileID: 8300000, guid: fda1d3e44f158c142a06e0de057116ad, type: 3}
   - {fileID: 8300000, guid: aa1bf0f90c929f44085a199964d54f65, type: 3}
   - {fileID: 8300000, guid: 6470757cdae3b61429c185f3506e006f, type: 3}
@@ -4235,6 +4235,9 @@ MonoBehaviour:
   starterHomelessEnding: 0
   starterGameEnd: 0
   starterBarPoints: 0
+  starterBarEnd: 0
+  starterAlley: 0
+  starterGoodEnd: 0
   currentEnergy: 4
   currentHealth: 0
   currentTime: 0
@@ -4246,6 +4249,9 @@ MonoBehaviour:
   currentHomelessEnding: 0
   currentGameEnd: 0
   currentBarPoints: 0
+  currentBarEnd: 0
+  currentAlley: 0
+  currentGoodEnd: 0
   sceneManager: {fileID: 1735145909}
   energy: {fileID: 511534761}
   health: {fileID: 873268041}

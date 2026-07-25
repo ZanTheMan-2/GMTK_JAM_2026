@@ -48,16 +48,22 @@ public class BarController : MonoBehaviour
 
     public void talkButton()
     {
+        Debug.Log("here");
         if (AnyDialogRunning()) return;
         if (stats.currentEnergy < 1) return;
 
         BarStage match = null;
+        Debug.Log("here2");
 
         // only the stage whose pointsNeeded equals the current points
         foreach (BarStage s in stages)
         {
+                    Debug.Log("here3");
+
             if (s.pointsNeeded == stats.currentBarPoints)
             {
+                        Debug.Log("here4");
+
                 match = s;
                 break;
             }
@@ -67,6 +73,8 @@ public class BarController : MonoBehaviour
 
         stats.currentEnergy -= 1;
         current = match;
+
+            Debug.Log("here5");
 
         HideAllStages();
         match.Dialog.SetActive(true);
