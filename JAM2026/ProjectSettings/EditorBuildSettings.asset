@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HospitalEnding.unity
     guid: a458744187f56448ba45a33ad7e21bd5
+  - enabled: 1
+    path: Assets/Scenes/AlleyEnd.unity
+    guid: cf9ba5f19331e47debe49af5337faed7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0
