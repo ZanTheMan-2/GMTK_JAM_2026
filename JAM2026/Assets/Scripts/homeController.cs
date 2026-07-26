@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class homeController : MonoBehaviour
 {
@@ -6,9 +7,11 @@ public class homeController : MonoBehaviour
     public GameObject canva, gui;
     public dialogController con;
     public SpriteRenderer sprite;
+    public TextMeshProUGUI text;
 
     void Start()
     {
+        
         if (stats.currentLandlord == 0)
         {
             stats.currentLandlord = 1;
