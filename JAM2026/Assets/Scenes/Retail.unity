@@ -166,11 +166,11 @@ MonoBehaviour:
   - ShopMan
   - ShopMan
   person:
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  - {fileID: -5197932188346666493, guid: 773720f9fffd2bcb78a31e2e7bb748cf, type: 3}
+  - {fileID: -7810627637661477802, guid: a90e5f8b64a2e092bb74927235d24105, type: 3}
+  - {fileID: 7675769270256402909, guid: bf6e2f74958a6ff1386298274f3e6038, type: 3}
+  - {fileID: 6433603414750787123, guid: adec564f44c01fba19777b5ea067bc54, type: 3}
+  - {fileID: -5197932188346666493, guid: 773720f9fffd2bcb78a31e2e7bb748cf, type: 3}
   voice:
   - {fileID: 8300000, guid: e78be96672e772845a72314c34233527, type: 3}
   - {fileID: 8300000, guid: 1254e379356bd704995c280071200263, type: 3}
@@ -3001,7 +3001,7 @@ MonoBehaviour:
   whoIsTalking:
   - ShopMan
   person:
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  - {fileID: -7810627637661477802, guid: a90e5f8b64a2e092bb74927235d24105, type: 3}
   voice:
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   achualText: {fileID: 125646629}
@@ -3242,7 +3242,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  m_Sprite: {fileID: -7810627637661477802, guid: a90e5f8b64a2e092bb74927235d24105, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3794,9 +3794,9 @@ MonoBehaviour:
   - ShopMan
   - ShopMan
   person:
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  - {fileID: -4565552420955435069, guid: b963190715256fa5a8c6a21bb90ecae6, type: 3}
+  - {fileID: -4538162231034345755, guid: 50bd4a2857f11991d99a36319ec6d2c1, type: 3}
+  - {fileID: -1650338047867041166, guid: b3620779e5a8cff7795f25d9e5673f49, type: 3}
   voice:
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
   - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
@@ -4846,11 +4846,11 @@ MonoBehaviour:
   - ShopMan
   - ShopMan
   person:
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
+  - {fileID: -4565552420955435069, guid: b963190715256fa5a8c6a21bb90ecae6, type: 3}
+  - {fileID: -7810627637661477802, guid: a90e5f8b64a2e092bb74927235d24105, type: 3}
   - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  - {fileID: 7675769270256402909, guid: bf6e2f74958a6ff1386298274f3e6038, type: 3}
+  - {fileID: 6433603414750787123, guid: adec564f44c01fba19777b5ea067bc54, type: 3}
   voice:
   - {fileID: 8300000, guid: 059bb36e396e8084c99fb8bd14b14fff, type: 3}
   - {fileID: 8300000, guid: 3f6fc02b5e350ae4dbec0a6e53630650, type: 3}
@@ -5178,9 +5178,9 @@ MonoBehaviour:
   - ShopMan
   - ShopMan
   person:
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: 1259179668240453662, guid: 142963879d63f4526862a6c099654a3d, type: 3}
-  - {fileID: -3088475872293970760, guid: 980636df60539474680a9eae5c8911fa, type: 3}
+  - {fileID: -5197932188346666493, guid: 773720f9fffd2bcb78a31e2e7bb748cf, type: 3}
+  - {fileID: 6433603414750787123, guid: adec564f44c01fba19777b5ea067bc54, type: 3}
+  - {fileID: 7675769270256402909, guid: bf6e2f74958a6ff1386298274f3e6038, type: 3}
   voice:
   - {fileID: 8300000, guid: 39378b416d7e03a45a9ae7d8494c3267, type: 3}
   - {fileID: 8300000, guid: c900b977ec9e2c042a068cc829c189a2, type: 3}

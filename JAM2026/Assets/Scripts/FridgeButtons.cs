@@ -22,6 +22,7 @@ public class FridgeButtons : MonoBehaviour
 
 
     }
+    
     public void leaveButton()
     {
         houseGUI.SetActive(true);

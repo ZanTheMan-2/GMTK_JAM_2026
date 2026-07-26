@@ -28,6 +28,7 @@ public class BarController : MonoBehaviour
         HideAllStages();
         itemBuys.SetActive(false);
     }
+   
 
     private void HideAllStages()
     {

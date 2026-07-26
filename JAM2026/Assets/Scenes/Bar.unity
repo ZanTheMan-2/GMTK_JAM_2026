@@ -389,7 +389,7 @@ MonoBehaviour:
   - 'Well, I can tell you now that this is the right place for you, my friend. '
   - 'The afterlife takes people like you and gives them a second chance.  '
   - 'That said, most people that come in toss that second chance away. '
-  - 'What? You thought that the afterlife is just going to give you what you want? '
+  - 'What? You thought that the afterlife is just going to give you what you wanted? '
   - 'You should know that there are two different types of afterlives, and one of
     them is better than the other.  '
   - 'Best of luck for you, buddy. '
@@ -413,14 +413,14 @@ MonoBehaviour:
   - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   - {fileID: -5299578741340934870, guid: 2f1413c2857944ec48c3de64b1568c84, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: 38648aaf7e9431d448c452b9b1bfa9be, type: 3}
+  - {fileID: 8300000, guid: d5abcb581b9f54344a51d121d51bbae6, type: 3}
+  - {fileID: 8300000, guid: 9bc428c69c75bee40b4422cbb7b3af2d, type: 3}
+  - {fileID: 8300000, guid: 4619fbb652449b745b593af70123f247, type: 3}
+  - {fileID: 8300000, guid: 5e279b81dfdb4c94ca2ca29ddd3022fb, type: 3}
+  - {fileID: 8300000, guid: 3b0ce44afc9551e4e9d173314287814c, type: 3}
+  - {fileID: 8300000, guid: 3881671365af1494fb67829dda262f09, type: 3}
+  - {fileID: 8300000, guid: f84c932c9fd2fb945bd843115da2cdc9, type: 3}
   achualText: {fileID: 1852728391}
   whoIsTalkingText: {fileID: 1852728390}
   canva: {fileID: 1852728389}
@@ -3273,6 +3273,10 @@ MonoBehaviour:
     pointsAwarded: 1
     Dialog: {fileID: 1852728389}
     dialog: {fileID: 1917575807}
+  - pointsNeeded: 2
+    pointsAwarded: 1
+    Dialog: {fileID: 1852728389}
+    dialog: {fileID: 1805901743}
 --- !u!1 &1297753918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,12 +3449,12 @@ MonoBehaviour:
   audioSource: {fileID: 1231207386}
   sceneManagey: {fileID: 1231207389}
   text:
-  - 'Oh, hey, welcome back. Since you came, I know you are serious about this. '
-  - 'You will notice that much of the bar has opened up to you. '
-  - 'So be free to take a look around. '
-  - 'And welcome to the afterlife.  '
+  - 'Oh, hey, welcome back my friend. Since you came again, I know you are serious
+    about this. '
+  - 'You are probably wondering how the afterlife is going to change your life, huh? '
+  - 'Well, that is a secret; just play around with what we have, and I know a smart
+    kid like you will figure it out. '
   whoIsTalking:
-  - Bar Owner
   - Bar Owner
   - Bar Owner
   - Bar Owner
@@ -3458,12 +3462,10 @@ MonoBehaviour:
   - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
   - {fileID: 5558125661107001406, guid: 8dba92cd074084ab39dd1c29b1663fff, type: 3}
   - {fileID: -5299578741340934870, guid: 2f1413c2857944ec48c3de64b1568c84, type: 3}
-  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: e9bf2d6ad26bd7e4699eb8a9d47657ac, type: 3}
+  - {fileID: 8300000, guid: bcd3976da7f34634ebc420e8d88f8c52, type: 3}
+  - {fileID: 8300000, guid: f1fcfa0b3e5e3744f8f71e68a8e571e7, type: 3}
   achualText: {fileID: 1852728391}
   whoIsTalkingText: {fileID: 1852728390}
   canva: {fileID: 1852728389}
@@ -4437,6 +4439,113 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786356234}
   m_CullTransparentMesh: 1
+--- !u!1 &1805901742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805901744}
+  - component: {fileID: 1805901743}
+  m_Layer: 0
+  m_Name: Chatconvo4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1805901743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805901742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90da1c55e6e474a72b5f4ee90cc545af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::dialogController
+  beginOnStart: 0
+  swapScene: 0
+  sceneName: 
+  audioSource: {fileID: 1231207386}
+  sceneManagey: {fileID: 1231207389}
+  text:
+  - 'What do you really think that there is more ti this place. What do you really
+    think that there is more ti this place. '
+  - 'Well, you do have a keen eye my friend. '
+  - 'There are two things that make this place extra special compared to other bars. '
+  - 'The first is the people; not anyone is able to get into here. '
+  - 'You need to be a special type of person to enter. '
+  - 'The second is our drinks.  '
+  - 'It is definitely not for everyone I can tell you that much. '
+  - 'Our drinks are enough to bring you to a new place; if you are going to enjoy
+    that place, it''s all up to you. '
+  whoIsTalking:
+  - Bar Owner
+  - Bar Owner
+  - Bar Owner
+  - Jo
+  - Mama
+  - Bar Owner
+  - Bar Owner
+  - Bar Owner
+  person:
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 5558125661107001406, guid: 8dba92cd074084ab39dd1c29b1663fff, type: 3}
+  - {fileID: -4423990712768553339, guid: e0e5a0b84f8c74ea29fe2293eeab9e34, type: 3}
+  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
+  - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
+  - {fileID: 2353848032342314181, guid: ffc9bcb80e02e43feaf3da771cc4e613, type: 3}
+  - {fileID: 2353848032342314181, guid: ffc9bcb80e02e43feaf3da771cc4e613, type: 3}
+  - {fileID: 2353848032342314181, guid: ffc9bcb80e02e43feaf3da771cc4e613, type: 3}
+  voice:
+  - {fileID: 8300000, guid: 101ca5f7ceaaaf54c82bd426a3e6425c, type: 3}
+  - {fileID: 8300000, guid: 3613e69437fdd144c924d92229994e4e, type: 3}
+  - {fileID: 8300000, guid: 8a8d1161ca366ca4381f556b4463e7c1, type: 3}
+  - {fileID: 8300000, guid: 974608a073a8ab5459e2e3c769bc2123, type: 3}
+  - {fileID: 8300000, guid: 627dbdab071884f4aa14a0efeb3b73b7, type: 3}
+  - {fileID: 8300000, guid: 82a931aa3e80aa143a8a72a761d3de8f, type: 3}
+  - {fileID: 8300000, guid: 62460713f40c8f04e83b6773e4db527b, type: 3}
+  - {fileID: 8300000, guid: 848daccf43dcbbf4a985aec1a565f509, type: 3}
+  achualText: {fileID: 1852728391}
+  whoIsTalkingText: {fileID: 1852728390}
+  canva: {fileID: 1852728389}
+  gui: {fileID: 1780283915}
+  spriteRenderer: {fileID: 2131693834}
+  onFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1231207392}
+        m_TargetAssemblyTypeName: BarController, Assembly-CSharp
+        m_MethodName: AddPoints
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1805901744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805901742}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.94607, y: 0.04318, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841903206
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,15 +4866,12 @@ MonoBehaviour:
   audioSource: {fileID: 1231207386}
   sceneManagey: {fileID: 1231207389}
   text:
-  - 'Oh hi again.  '
-  - 'You know, right? You don''t have to just talk to me, right? The afterlife is
-    filled with fun people. '
-  - Actually.
-  - 'HEY JO COME OVER HERE. '
-  - 'Howdy, why ye ruffling my feathers, huh, good sir? '
-  - 'Oh? '
-  - 'A new friend for you. '
-  - 'Is that so, ye are welcome to our table the next time we meet. '
+  - 'OK, OK, I give. I will tell you what makes the afterlife so special.  '
+  - 'So the secret is!  '
+  - 'Nothing. '
+  - 'It''s all blank. '
+  - 'Like the little kung fu panda reference.  '
+  - 'Its an awesome movie '
   whoIsTalking:
   - Bar Owner
   - Bar Owner
@@ -4773,8 +4879,6 @@ MonoBehaviour:
   - Jo
   - Jo
   - Bar Owner
-  - Jo
-  - Jo
   person:
   - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
   - {fileID: 5558125661107001406, guid: 8dba92cd074084ab39dd1c29b1663fff, type: 3}
@@ -4782,17 +4886,13 @@ MonoBehaviour:
   - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   - {fileID: 6273524432217965177, guid: b8d20fa01fd2447919c75a93f4d7aed2, type: 3}
   - {fileID: 2353848032342314181, guid: ffc9bcb80e02e43feaf3da771cc4e613, type: 3}
-  - {fileID: -5299578741340934870, guid: 2f1413c2857944ec48c3de64b1568c84, type: 3}
-  - {fileID: 659225888799548242, guid: d448011a7829c451f9a346b4f8c5589b, type: 3}
   voice:
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
-  - {fileID: 8300000, guid: 5b5f2511750204b5ebd07e047c31f1c1, type: 3}
+  - {fileID: 8300000, guid: b815070a3443bd3448dbcede98380efe, type: 3}
+  - {fileID: 8300000, guid: f7fb932d5ace7d940b439db46bc19d64, type: 3}
+  - {fileID: 8300000, guid: e41a32fdd1294e94298b65453b6093fa, type: 3}
+  - {fileID: 8300000, guid: 51f56850cc18e814b9bd307137470638, type: 3}
+  - {fileID: 8300000, guid: 3e3dbd9b3b14ba94fb328f23d9d40eb7, type: 3}
+  - {fileID: 8300000, guid: 30ab843a8c7a02f4b92ee0e9115c82f6, type: 3}
   achualText: {fileID: 1852728391}
   whoIsTalkingText: {fileID: 1852728390}
   canva: {fileID: 1852728389}
@@ -5345,3 +5445,4 @@ SceneRoots:
   - {fileID: 124140823}
   - {fileID: 1302248552}
   - {fileID: 1917575808}
+  - {fileID: 1805901744}

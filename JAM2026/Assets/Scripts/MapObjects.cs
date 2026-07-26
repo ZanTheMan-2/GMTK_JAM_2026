@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "MapObjects", menuName = "Scriptable Objects/MapObjects")]
@@ -7,4 +8,5 @@ public class MapObjects : ScriptableObject
     public string locationName;
     public int walkEnergyCost, walkHealthGain, walkTimeCost;
     public int carEnergyCost, carTimeCost, carPriceCost;
+   
 }
