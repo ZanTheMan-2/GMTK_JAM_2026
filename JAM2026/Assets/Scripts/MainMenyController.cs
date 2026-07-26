@@ -1,11 +1,13 @@
 using UnityEngine;
 using TMPro;
+using System.Runtime.CompilerServices;
 public class MainMenyController : MonoBehaviour
 {
     private SceneManagey sceneManagey;
     private Stats stats;
     public TextMeshProUGUI endingText;
     bool badEnding, goodEnding, homelessEnding, barEnding, deadEnding, homelessEndingg;
+    public GameObject gallary;
     private void Awake()
     {
         sceneManagey = GetComponent<SceneManagey>();
@@ -18,11 +20,20 @@ public class MainMenyController : MonoBehaviour
     }
     private void Start()
     {
+        gallary.SetActive(false);
         endingText.SetText($"Bad End: {badEnding}\nGood End: {goodEnding}\nHomeles End: {homelessEndingg}\n Dead End: {deadEnding}\n Bar Ending: {barEnding}");   
     }
     public void playButton()
     {
         sceneManagey.SwitchScene("Office");
+    }
+    public void closeButton()
+    {
+        gallary.SetActive(false);
+    } 
+    public void gallaryButton()
+    {
+        gallary.SetActive(true);
     }
     
 }

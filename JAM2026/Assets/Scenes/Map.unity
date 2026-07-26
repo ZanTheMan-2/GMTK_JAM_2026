@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1780,6 +1780,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705533911}
   m_CullTransparentMesh: 1
+--- !u!1001 &723278655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1521845439}
+    m_Modifications:
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -377.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 175.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307991794985763273, guid: d37d0e78170cf784c927894da5532136, type: 3}
+      propertyPath: m_Name
+      value: UIIMG
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d37d0e78170cf784c927894da5532136, type: 3}
+--- !u!224 &723278656 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5019959748197945214, guid: d37d0e78170cf784c927894da5532136, type: 3}
+  m_PrefabInstance: {fileID: 723278655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &740096176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,7 +2140,8 @@ PrefabInstance:
       value: -23.296
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4433552542399136109, guid: 42f07ac476f6b4074b48fa97b27e5a21, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f07ac476f6b4074b48fa97b27e5a21, type: 3}
@@ -3031,6 +3134,7 @@ MonoBehaviour:
   starterBarEnd: 0
   starterAlley: 0
   starterGoodEnd: 0
+  starterDays: 0
   currentEnergy: 0
   currentHealth: 0
   currentTime: 0
@@ -3045,6 +3149,7 @@ MonoBehaviour:
   currentBarEnd: 0
   currentAlley: 0
   currentGoodEnd: 0
+  currentDays: 0
   sceneManager: {fileID: 1425009319}
   energy: {fileID: 1842879398}
   health: {fileID: 329044169}
@@ -3450,6 +3555,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 723278656}
   - {fileID: 1404084298}
   - {fileID: 608748178}
   - {fileID: 1842879397}
@@ -3728,7 +3834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

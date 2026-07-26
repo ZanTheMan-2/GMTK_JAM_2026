@@ -26,7 +26,8 @@ public class HomeButtons : MonoBehaviour
         buttons.SetActive(false);
     }
     public void sleepButton()
-    {
+    {   
+            stats.currentDays += 1;
             stats.currentTime = 0;
             homeButton.SetActive(true);
             stats.currentEnergy +=5;

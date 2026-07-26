@@ -7,14 +7,18 @@ public class homeController : MonoBehaviour
     public GameObject canva, gui;
     public dialogController con;
     public SpriteRenderer sprite;
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI texty;
 
-    void Start()
+    private void Update()
     {
-        
+        texty.SetText($"{stats.currentDays}");
+    }
+    private void Start()
+    {
+        stats.currentLandlord = 1;
+
         if (stats.currentLandlord == 0)
         {
-            stats.currentLandlord = 1;
             gui.SetActive(false);
             canva.SetActive(true);
             con.enabled = true;

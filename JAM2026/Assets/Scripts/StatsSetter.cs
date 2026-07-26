@@ -11,6 +11,7 @@ public class StatsSetter : MonoBehaviour
         stats.currentGameEnd = 0;
          Debug.Log($"Current game end: {stats.currentGameEnd}");
 
+
         stats.currentAlley = 0;
         stats.currentHealth = health;
         stats.currentEnergy = energy;
@@ -21,5 +22,6 @@ public class StatsSetter : MonoBehaviour
         stats.currentLandlord = 0;
         stats.currentBarPoints = 0;
         stats.currentAlley = 0;
+        stats.currentDays = 0;
     }
 }

@@ -4,8 +4,8 @@ using TMPro;
 
 public class Stats : MonoBehaviour
 {
-    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding, starterHospitalEnding, starterHomelessEnding, starterGameEnd, starterBarPoints, starterBarEnd, starterAlley, starterGoodEnd;
-    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding, currentHospitalEnding, currentHomelessEnding,currentGameEnd, currentBarPoints, currentBarEnd, currentAlley, currentGoodEnd;
+    public int starterEnergy, starterHealth, starterTime, starterCash, starterRetailApply, starterLandlord, starterBadEnding, starterHospitalEnding, starterHomelessEnding, starterGameEnd, starterBarPoints, starterBarEnd, starterAlley, starterGoodEnd, starterDays;
+    public int currentEnergy, currentHealth, currentTime, currentCash, retailApply, currentLandlord, currentBadEnding, currentHospitalEnding, currentHomelessEnding,currentGameEnd, currentBarPoints, currentBarEnd, currentAlley, currentGoodEnd, currentDays;
     public SceneManagey sceneManager;
     public Slider energy, health;
     public TextMeshProUGUI moneyText;
@@ -16,6 +16,7 @@ public class Stats : MonoBehaviour
         Debug.Log($"{gameObject.scene.name}: starter={starterEnergy} current={currentEnergy} exists={PlayerPrefs.GetInt("statsExist", 0)}");
         if (PlayerPrefs.GetInt("statsExist", 0) != 0)
         {
+            currentDays = PlayerPrefs.GetInt("Day");
             currentGoodEnd = PlayerPrefs.GetInt("GoodEnd");
             currentAlley = PlayerPrefs.GetInt("Alley");
             currentBarEnd = PlayerPrefs.GetInt("BarEnd");
@@ -33,6 +34,7 @@ public class Stats : MonoBehaviour
         }
         else
         {
+            currentDays = starterDays;
             currentGoodEnd = starterGoodEnd;
             currentAlley = starterAlley;
             currentBarEnd = starterBarEnd;
@@ -56,6 +58,7 @@ public class Stats : MonoBehaviour
     // Called whenever the scene is changed
     public void SceneSwitched()
     {
+        PlayerPrefs.SetInt("Day", currentDays);
         PlayerPrefs.SetInt("GoodEnd", currentGoodEnd);
         PlayerPrefs.SetInt("Alley", currentAlley);
         PlayerPrefs.SetInt("BarEnd", currentBarEnd);
